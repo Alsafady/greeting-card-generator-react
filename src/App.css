@@ -1,38 +1,258 @@
+@import url('//fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import url('//fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+@font-face {
+  font-family: 'FrutigerLTArabic-65Bold';
+  src: local('FrutigerLTArabic-65Bold'), url(fonts/FrutigerLTArabic-65Bold.woff) format('woff');
+}
+
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  /*min-height: 100vh;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
+  /*justify-content: center;*/
+  /*font-size: calc(10px + 2vmin);*/
+  /*color: white;*/
+}
+
+
+
+
+h2{
+  color:#fff;
+}
+
+
+body{
+  font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+  font-size: 20px;
+  /*margin: 0;*/
+  background-color: #282c34;
+  /*margin: 0;*/
+}
+
+/*header{*/
+/*  display: flex;*/
+/*  height: 100px;*/
+/*  align-items: center;*/
+/*  background: green; !* Fallback for older browsers *!*/
+/*  margin: 0 auto;*/
+/*  text-align: center;*/
+/*}*/
+
+/*header img {*/
+/*  height: 80%;*/
+/*}*/
+
+.navbar{
+  background: #009d46 !important;
+}
+
+
+.navbar-brand{
+  color: #fff !important;
+}
+
+
+
+
+header p {
+  font-family: 'FrutigerLTArabic-65Bold', cursive;
+  line-height: 30px;
+  color: whitesmoke;
+  font-size: 40px;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex: 1;
+}
+
+
+
+
+main{
+  text-align: center;
+  margin: 0 auto;
+  background-color: #282c34;
+
+  /*max-width: 700px;*/
+  /* width: 80%;
+    padding: 20px;
+  box-shadow: 3px 4px 4px #888888; */
+}
+
+.generator{
+  max-width: 700px;
+  margin: 0 auto;
+
+}
+
+.card{
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+}
+
+.title{
+  font-size: 3em;
+  position: absolute;
+  top: 1%;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: 'FrutigerLTArabic-65Bold', Sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
   color: white;
+  /*letter-spacing: 1px;*/
+  text-shadow:
+          2px 2px 0 #000,
+          -2px -2px 0 #000,
+          2px -2px 0 #000,
+          -2px 2px 0 #000,
+          0 2px 0 #000,
+          2px 0 0 #000,
+          0 -2px 0 #000,
+          2px 2px 5px #000;
 }
 
-.App-link {
-  color: #61dafb;
+.user_text {
+  width: 60%;
+  font-family: 'FrutigerLTArabic-65Bold', Times, serif;
+  color: white;
+  text-shadow:
+          2px 2px 5px #000;
+  position: absolute;
+  bottom: 10%;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.card-form {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
 }
+
+
+
+.card-form > button {
+  float: right;
+}
+
+
+.card-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+  /*font-size: 25px;*/
+  text-align: center;
+}
+
+.card-form > input::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+  /*font-size: 25px;*/
+  text-align: center;
+}
+
+.card-form > input::-ms-input-placeholder { /* IE 10+ */
+  font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+  /*font-size: 25px;*/
+  text-align: center;
+}
+
+.card-form > input::-input-moz-placeholder { /* Firefox 18- */
+  font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+  /*font-size: 25px;*/
+  text-align: center;
+}
+
+
+
+.hidden{
+  /* position: absolute;
+  top: 5%;
+  left: 2%;
+  background-color: white;
+  box-shadow: 10px 14px 14px #888888;
+  padding: 20px; */
+  display: none;
+  height: auto;
+}
+
+.card_container{
+  margin: 0 auto;
+
+  /*box-shadow: 0px 0px 25px #888888;*/
+  /*border: 1px solid #747474;*/
+  /*height: auto;*/
+  /*!*background-color: #147320;*!*/
+  /*color:#fff;*/
+}
+
+.card_generated{
+  height: auto;
+}
+.card_generated img {
+  position: relative;
+  /*left: -3%;*/
+}
+
+
+
+
+.close{
+  display: none;
+  position: relative;
+  float: right;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+
+
+
+@media (min-width: 900px) {
+
+  .card > .title {
+    font-size: 2em;
+    font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+
+  }
+
+  .card > .user_text {
+    font-size: 1.6em;
+    font-family: 'FrutigerLTArabic-65Bold', sans-serif;
+
+
+  }
+
+
+}
+
+
